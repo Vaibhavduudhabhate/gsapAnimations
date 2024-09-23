@@ -8,76 +8,77 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+    </style>
+  <style>
+    *{
+      margin: 0;padding: 0;
+    }
     .animated-text {
-      /* font-size: 24px; */
-      color: #333;
-      /* position: absolute; */
+      /* color: #333; */
       height: 5px;
       display: inline-block;
-      /* bottom: -50px; Initial position below the viewport */
-      /* animation: slide-up 2s ease infinite; Adjust duration and timing function */
     }
     .animated-text2{
-        /* font-size: 24px; */
-      color: #333;
+      /* color: #333; */
       display: inline-block;
-      /* position: absolute; */
-      /* height: 5px; */
-      /* bottom: -50px; Initial position below the viewport */
-      /* animation: slide-up2 6s ease infinite; Adjust duration and timing function */
     }
     .zeroClass{
-        /* font-size: 24px; */
-      color: #333;
+      /* color: #333; */
       display: inline; 
     }
     .twoClass{
-        /* font-size: 24px; */
-      color: #333;
+      /* color: #333; */
     }
     .plusClass{
-        /* font-size: 24px; */
-      color: #333;
-      /* position: absolute; */
+      /* color: #333; */
+      display: flex;
+      align-items: center;
+    }
+    .plusClass img{
+      height: 100px;
+      width: 80px;
+      margin: 30px;
     }
     .container{
-        font-size: 50px;
+      color: white;
+        position: absolute;
+        /* font-size: 100px; */
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 700px;
+        justify-content: space-evenly;
+        /* justify-content: center; */
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    @keyframes slide-up {
-      0% {
-        transform: translateY(100%); /* Start position */
-      }
-      100% {
-        transform: translateY(0); /* End position (fully visible) */
-        top: 0;
-      }
-    }
-    @keyframes slide-up2 {
-      0% {
-        transform: translateY(100%); /* Start position */
-      }
-      100% {
-        transform: translateY(0); /* End position (fully visible) */
-      }
-    }
+    
     .relativeDiv{
         position: relative;
     }
     .textdiv2{
+      width: 200px;
         display: none;
     }
     .textdiv3{
+      width: 200px;
         display: none;
     }
+    .textdiv1{
+      width: 200px;
+        /* display: none; */
+    }
+    .textDiv{
+      /* width: ; */
+      font-size: 64px !important;
+      display: flex;
+      align-items: center;
+    }
     .lettersCont{
-        font-size: 50px;
-        width: 150px;
+        /* font-size: 100px; */
+        /* width: 150px; */
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -85,31 +86,84 @@
     .mt-5{
         margin-top: 30px;
     }
+    .road-rage-regular {
+      font-family: "Road Rage", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .allLets{
+      letter-spacing: -49px;
+      /* width: 460px; */
+      Font:'Road Rage';
+      font-weight: 400;
+      font-size: 500px !important;
+      /* line-height: 770px; */
+    }
+    .containerMain{
+      color: white;
+      height: 100vh;
+      width: 100%;
+      object-fit: fill;
+      border-radius: 120px, 120px, 0px, 0px;
+      position: relative;
+    }
+    .mainImage{
+      height: 100vh;
+      width: 100%;
+    }
+    .containerMain::before {
+      content: ""; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./assets/kal-visuals-b5V2bZ8USO0-unsplash\ 4.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7; 
+    }
   </style>
 </head>
 
 <body>
-    <div id="changingText">250</div>
-    <div class="container mt-5">
-        <div class="relativeDiv">
-            <div class="lettersCont">
-                <div class="allLets">
-                    <span class="twoClass">2</span>
-                    <span class="zeroClass" id="zeroClass">0</span>
-                    <span class="animated-text" id="Animated">5</span>
-                    <span class="animated-text2" id="Animatedtwo">0</span>
+
+    <div class="containerMain">
+      <img class="mainImage" src="./assets/kal-visuals-b5V2bZ8USO0-unsplash 3.png" alt="" srcset="">
+      <div class="container mt-5">
+          <div class="relativeDiv">
+              <div class="lettersCont">
+                  <div class="allLets road-rage-regular">
+                      <span class="twoClass">2</span>
+                      <span class="zeroClass" id="zeroClass">0</span>
+                      <span class="animated-text" id="Animated">5</span>
+                      <span class="animated-text2" id="Animatedtwo">0</span>
+                  </div>
                 </div>
-                <span class="plusClass">+</span>
-            </div>
-        </div>
-        <div class="textDiv">
-            <div class="textdiv1">Clients</div>
-            <div class="textdiv2">PROJECTS</div>
-            <div class="textdiv3">minutes of content</div>
-        </div>
-    </div>  
+              </div>
+              <span class="plusClass"><img src="./assets/Vector.png" alt="" srcset=""></span>
+          <div class="textDiv">
+              <div class="textdiv1">Clients</div>
+              <div class="textdiv2">PROJECTS</div>
+              <div class="textdiv3">minutes of content</div>
+          </div>
+      </div>  
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+<!-- <div class="lettersCont">
+  <div class="allLets road-rage-regular">
+      <span class="twoClass">2</span>
+      <span class="zeroClass" id="zeroClass">0</span>
+      <span class="animated-text" id="Animated">5</span>
+      <span class="animated-text2" id="Animatedtwo">0</span>
+  </div>
+  <span class="plusClass"><img src="./assets/Vector.png" alt="" srcset=""></span>
+</div> -->

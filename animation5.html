@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .container {
+            /* padding: 4rem 2rem 10rem; */
+            /* padding-bottom: 10rem; */
+        }
+
+        .p {
+            /* position: relative; */
+            display: block;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+        }
+
+        .p p {
+            /* position: relative; */
+            z-index: 1;
+        }
+
+        .p.rev .p-bg {
+            /* transform: rotate(-2.5deg) translateX(-0.5rem); */
+        }
+
+        .p-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 0.5rem;
+        }
+
+        .spacer {
+            height: calc(100vh);
+        }
+
+        .spacer-min {
+            height: calc(50vh);
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="p p-1 active">
+            <div class="p-bg">
+                <div class="imgdiv">
+                    <img class="imgCom img7" src="./assets3/kal-visuals-ZZ-OhZeJScY-unsplash 1.png" class="img "
+                        alt="Hh7">
+                </div>
+            </div>
+            <div class="imgContainer">
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="flex">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <div class="p rev p-2 p-right">
+                    <div class="imgContainer">
+                        <div class="imgdiv">
+                            <img class="imgCom img7" src="./assets3/kal-visuals-ZZ-OhZeJScY-unsplash 1.png" class="img "
+                                alt="Hh7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="spacer-min"></div> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="script5.js"></script>
+</body>
+
+</html>

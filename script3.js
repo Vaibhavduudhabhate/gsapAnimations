@@ -6,12 +6,12 @@ window.onload = function() {
         ease: "power1.inOut"
     });
     const positions = [
-        { top: "10%", left: "10%" },
-        { top: "10%", left: "80%" },
-        { top: "80%", left: "10%" },
+        { top: "10%", left: "10%" },//
+        { top: "20%", left: "75%" },//
+        { top: "70%", left: "10%" },//
+        { top: "2%", left: "2%" },//
+        { top: "20%", left: "80%" },//
         { top: "80%", left: "80%" },
-        { top: "50%", left: "20%" },
-        { top: "50%", left: "80%" },
         { top: "50%", left: "80%" }
     ];
 

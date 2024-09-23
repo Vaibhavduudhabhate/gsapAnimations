@@ -1,13 +1,6 @@
-// alert('')
-// gsap.from("#Animated",{
 
-//     delay: 0.5,
-//     // opacity: 0,
-//     duration: 1,
-//     y:-50,
-// })
 gsap.from("#Animated", {  
-    y: 20,
+    y: 30,
     duration: 1.5,
     delay:3,
     opacity:0,
@@ -17,7 +10,7 @@ gsap.from("#Animated", {
     }
  });
 gsap.from('#Animatedtwo',{
-    y: 20,
+    y: 30,
     duration: 2 ,
     delay: 6,
     opacity: 0,
@@ -27,7 +20,7 @@ gsap.from('#Animatedtwo',{
     }
 })
 gsap.to('#zeroClass',{
-    y: 20,
+    y: 30,
     duration: 1,
     delay: 2,
     opacity: 0,
